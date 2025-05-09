@@ -1,0 +1,90 @@
+.sidebar {
+    min-height: 100vh;
+    margin-top: 3.5rem; 
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10; 
+    background-color: #111827; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 4rem; 
+    overflow: hidden;
+    margin-left: 0;
+}
+
+.tc{
+    text-align: center;
+}
+
+
+.sidebar:hover {
+    width: 14rem; 
+}
+
+
+.sidebar.light-mode {
+    background-color: #1c2531; 
+    
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+ @media screen and (max-width: 760px){
+    .sidebar {
+        display: none;
+    }
+}
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    cursor: pointer; 
+}
+.menu-item {
+    display: flex; 
+    align-items: center; 
+    gap: 0.5rem; 
+    padding: 0.75rem 0;
+    padding-bottom: 8px;
+    border-bottom:1px solid #fff;
+}
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+  }
+.logout-button {
+     
+    display: flex; 
+    align-items: center; 
+    gap: 0.5rem; 
+}
+.logout-button {
+    color: #ef4444; 
+    cursor: pointer; 
+}
+
+.logout-button:hover {
+    cursor: pointer;
+}
+.dark-mode-toggle {
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    cursor: pointer; 
+    background: none; 
+    border: none; 
+    color: inherit; 
+}
+
+.dark-mode-toggle:hover {
+    cursor: pointer;
+}

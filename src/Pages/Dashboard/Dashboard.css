@@ -1,0 +1,93 @@
+.relative {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    background-color: #fff;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content Container */
+.main-content.dark-mode {
+    flex: 1;
+    /* Equivalent to flex-1 */
+    padding: 1rem;
+    /* Equivalent to p-4 */
+    background-color: #1f2937;
+    /* Equivalent to bg-gray-800 */
+    color: white;
+    /* Equivalent to text-white */
+    text-align: center;
+    /* Equivalent to text-center */
+
+}
+
+.text.dark-mode {
+    font-size: 1.25rem;
+    /* Equivalent to text-xl */
+    font-weight: bold;
+    /* Optional: Makes text stand out */
+}
+
+.head.dark-mode {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    padding: 0;
+}
+
+/* Income (Green) and Expense (Red) */
+.amount.source {
+    color: #2ecc71;
+    /* Green */
+    background: rgba(46, 204, 113, 0.1);
+}
+
+.amount.category {
+    color: #e74c3c;
+    /* Red */
+    background: rgba(231, 76, 60, 0.1);
+}
+
+.main-content {
+    flex: 1;
+    /* Equivalent to flex-1 */
+    padding: 1rem;
+    /* Equivalent to p-4 */
+    background-color: #333;
+    /* Equivalent to bg-gray-800 */
+    color: white;
+    /* Equivalent to text-white */
+    text-align: center;
+    /* Equivalent to text-center */
+
+}
+
+text {
+    font-size: 1.25rem;
+    /* Equivalent to text-xl */
+    font-weight: bold;
+    /* Optional: Makes text stand out */
+}
+
+head {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    padding: 0;
+}

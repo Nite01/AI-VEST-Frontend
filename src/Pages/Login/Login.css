@@ -1,0 +1,133 @@
+/* Login Page Container */
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Login Box */
+  .login-page h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: 600;
+  }
+  
+  /* Login Form */
+  .login-page form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Input Groups */
+  .login-page form div {
+    margin-bottom: 20px;
+  }
+  
+  .login-page label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .login-page input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .login-page input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Error Message */
+  .login-page p {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  /* Login Button */
+  .login-page button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-page button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Toggle Button (Sign Up / Login) */
+  .login-page p {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  .login-page p button {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .login-page p button:hover {
+    color: #0056b3;
+  }
+  /* Password Input Container */
+.password-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Password Toggle Button */
+.password-toggle {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  margin-top: 8px;
+  right: 10px;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Dark Mode Styles */
+.login-page.dark-mode input {
+  background-color: #333;
+  color: #ffffff;
+  border-color: #555;
+}
+
+.login-page.dark-mode .password-toggle {
+  color: #ffffff;
+}

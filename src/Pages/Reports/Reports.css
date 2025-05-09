@@ -1,0 +1,444 @@
+
+.reports-container.dark-mode  {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  min-height: 100vh;
+  margin: 0;
+  margin-top: 0%;
+}
+
+.reports-container{
+  background-color: white;
+  color: black;
+  padding: 10px;
+  min-height: 100vh;
+  margin: 0;
+  margin-top: 0%;
+}
+
+.reports-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.tabs-container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+  background-color: #1f2937; /* gray-800 */
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+/* .tabs-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+  background-color:#f9ebd1; 
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+} */
+
+.tab-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  color: #9ca3af; 
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.tab-button.active {
+  background-color: white;
+  color: black;
+  font-weight: 500;
+}
+
+
+.monthly-budget.dark-mode {
+  background-color: #111827; 
+  padding: 1rem;
+  margin-top: 0;
+  border-radius: 0.5rem;
+  padding-left: 4rem;
+}
+.monthly-budget {
+  background-color: wheat; 
+  padding: 1rem;
+  margin-top: 0;
+  border-radius: 0.5rem;
+  padding-left: 4rem;
+}
+
+.monthly-budget h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.monthly-budget div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+
+.category-budgets {
+  margin-top: 0.5rem;
+}
+
+.category-budgets h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding-left: 4rem;
+  text-align: center;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.25rem;
+  padding-left: 3.5rem;
+}
+
+.category-card.dark-mode {
+  background-color: #111827; /* gray-900 */
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.category-card {
+  background-color: wheat;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.category-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-card-header h4 {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.category-card p {
+  margin-top: 0.5rem;
+}
+
+.progress-bar-container {
+  width: 5rem;
+  height: 5rem;
+}
+
+.set-budget-button {
+  width: 100%;
+  background-color: #eab308; /* yellow-500 */
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* Budget Popup */
+.budget-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.budget-popup {
+  background-color: #1f2937; /* gray-800 */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  width: 24rem; /* w-96 */
+}
+
+.budget-popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.budget-popup-header h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.budget-popup-header button {
+  color: #9ca3af; 
+  cursor: pointer;
+}
+
+.budget-popup-header button:hover {
+  color: white;
+}
+
+.budget-popup input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  background-color: #374151; /* gray-700 */
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.budget-popup button {
+  width: 100%;
+  background-color: #eab308; /* yellow-500 */
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+/* Overflow Popup */
+.overflow-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overflow-popup {
+  background-color: #1f2937; /* gray-800 */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  width: 24rem; /* w-96 */
+}
+
+.overflow-popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.overflow-popup-header h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.overflow-popup-header button {
+  color: #9ca3af; /* gray-400 */
+  cursor: pointer;
+}
+
+.overflow-popup-header button:hover {
+  color: white;
+}
+
+.overflow-popup p {
+  margin-bottom: 1rem;
+}
+
+.overflow-popup button {
+  width: 100%;
+  background-color: #eab308; /* yellow-500 */
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 760px){
+  .category-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 0;
+    margin-bottom: 4rem;
+  }
+  .category-budgets h3 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+  }
+  .monthly-budget {
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  .reports-container.dark-mode {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    height: fit-content;
+    scroll-behavior:inherit
+  }
+  .reports-container {
+    background-color: white;
+    color: black;
+    padding: 8px;
+    height: fit-content;
+    scroll-behavior:inherit
+  }
+}
+
+
+
+
+
+
+
+
+
+/* .reports-container {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+  }
+  
+ 
+  .reports-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+ 
+  .tabs-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    background-color: #1f2937; 
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .tab-button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    color: #9ca3af; 
+  }
+  
+  .tab-button.active {
+    background-color: white;
+    color: black;
+  }
+  
+  
+  .monthly-stats {
+    background-color: #111827; 
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    padding-left: 5rem; 
+  }
+  
+  .monthly-stats h3 {
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+  
+  .monthly-stats div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+  
+  
+  .monthly-budget {
+    background-color: #111827; 
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    padding-left: 5rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .monthly-budget h3 {
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+  
+  .monthly-budget p {
+    margin-top: 0.5rem;
+  }
+  
+  .progress-bar-container {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 0.75rem;
+  }
+  
+  .set-budget-button {
+    background-color: #eab308; 
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+  }
+  
+ 
+  .budget-popup-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .budget-popup {
+    background-color: #1f2937; 
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    width: 24rem; }
+  
+  .budget-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .budget-popup-header h3 {
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+  
+  .budget-popup-header button {
+    color: #9ca3af; 
+    width: fit-content;
+  }
+  
+  .budget-popup-header button:hover {
+    color: white;
+  }
+  
+  .budget-popup input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    background-color: #374151; 
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .budget-popup button {
+    width: 100%;
+    background-color: #eab308; 
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    width: fit-content;
+  }
+  @media screen and (max-width: 760px){
+    .monthly-stats{
+        padding-left: 20px;
+    }
+    .monthly-budget{
+        padding-left: 20px;
+    }
+  } */

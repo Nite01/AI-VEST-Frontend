@@ -1,0 +1,89 @@
+/* Modal Background */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Form Title */
+.modal h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Input Fields */
+.modal input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.modal input:focus {
+    border-color: #007bff;
+}
+
+/* Buttons */
+.modal button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* Save Button */
+.modal button:first-of-type {
+    background: #007bff;
+    color: white;
+}
+
+.modal button:first-of-type:hover {
+    background: #0056b3;
+}
+
+/* Close Button */
+.modal button:last-of-type {
+    background: #ccc;
+}
+
+.modal button:last-of-type:hover {
+    background: #aaa;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .modal {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .modal h2 {
+        font-size: 18px;
+    }
+
+    .modal input {
+        font-size: 14px;
+    }
+
+    .modal button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}

@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: black;
+    margin-bottom: 0;
+  }
+
+.app-container.dark-mode{
+    background: fixed;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.app-container{
+    background: fixed;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+@media (max-width: 768px){
+    .app-container{
+    background: fixed;
+    background-color: white;
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    overflow-y: scroll;
+    margin-bottom: 4rem;
+}
+}

@@ -1,0 +1,75 @@
+/* Container */
+.add-transaction-container {
+  background: #fff;
+  color: #000;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Title */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Transaction Type Buttons */
+.transaction-type {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.type-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+.type-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Categories Grid */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Category Card */
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.category-card:hover {
+  background-color: #e2e6ea;
+}
+
+.category-card span {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .categories-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

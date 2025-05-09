@@ -1,0 +1,548 @@
+
+.day-container {
+  width: 5rem; 
+  height: 7rem; 
+  display: flex;
+  padding-top: 0.5rem;
+  justify-content: center;
+  border-radius: 0.5rem; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.day-container.over-budget {
+  background-color: #fca5a5; 
+  color: #991b1b; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: space-around;
+  padding-top: 0;
+}
+
+.day-container.under-budget {
+  background-color: #86efac; 
+  color: #166534;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: space-around;
+  padding-top: 0; 
+}
+
+.day-container.neutral {
+  background-color: #e5e7eb; 
+}
+
+
+.day-container .expense {
+  font-size: 0.75rem; 
+}
+
+.container {
+  padding: 1rem; 
+  max-width: 28rem; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.flex2-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #facc15;
+  padding: 0.75rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  margin-left: 4rem;
+}
+
+.heading {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem; 
+  color: #1e293b; 
+  padding: 0.5rem 0; 
+  transition: color 0.3s ease; 
+}
+
+.heading:hover {
+  color: #3b82f6; 
+}
+
+.days-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+  margin-top: 0.75rem;
+  padding: 1rem; 
+  background-color: #f3f4f6; 
+  border-radius: 0.5rem; 
+  margin-left: 5rem;
+  margin-right: 1rem;
+  place-items: center;
+}
+
+@media screen and (max-width: 760px){
+  .days-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .flex2-container {
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .days-container {
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 0;
+  }
+
+  .day-container {
+    width: 3.5rem; 
+    height: 3.5rem;
+    font-size: 0.8rem; 
+  }
+
+  .day-container .expense {
+    font-size: 0.6rem; 
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .day-container {
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.7rem;
+  }
+
+  .day-container .expense {
+    font-size: 0.55rem;
+  }
+}
+@media (min-width: 1024px) {
+  .day-container {
+    width: 7rem; 
+    height: 6rem; 
+    display: flex;
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+    border-radius: 0.5rem; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  
+  .day-container.over-budget {
+    background-color: #fca5a5; 
+    color: #991b1b; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-around;
+    padding-top: 0;
+  }
+  
+  .day-container.under-budget {
+    background-color: #86efac; 
+    color: #166534;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-around;
+    padding-top: 0; 
+  }
+  
+  .day-container.neutral {
+    background-color: #e5e7eb; 
+  }
+  
+  
+  .day-container .expense {
+    font-size: 2rem; 
+  }
+  
+  .container {
+    padding: 1rem; 
+    max-width: 28rem; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+  
+  .flex2-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #facc15;
+    padding: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-left: 10rem;
+    margin-right: 5rem;
+  }
+  .flex2-container button{
+    font-size: 2rem;
+  }
+  .heading {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2rem; 
+    color: #1e293b; 
+    padding: 0.5rem 0; 
+    transition: color 0.3s ease; 
+  }
+  
+  .heading:hover {
+    color: #3b82f6; 
+  }
+  
+  .days-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.25rem;
+    margin-top: 0.75rem;
+    padding: 1rem; 
+    background-color: #f3f4f6; 
+    border-radius: 0.5rem; 
+    margin-left: 10rem;
+    margin-right: 5rem;
+    place-items: center;
+  }
+  
+}
+
+.overlay2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(75, 85, 99, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; 
+  transition: background-color 0.3s ease; 
+}
+
+.overlay2-container {
+  background-color: #ffffff;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  border: 1px solid #e5e7eb; 
+  width: 100%; 
+  max-width: 24rem; 
+}
+
+.overlay-container h3 {
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem; 
+  color: #1e293b; 
+  text-align: center; 
+}
+
+.date-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 1rem; 
+  color: #1e293b; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.date-input:focus {
+  border-color: #3b82f6; 
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5); 
+}
+
+.button-flex {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center; 
+  justify-content: flex-start; 
+  padding: 1rem; 
+}
+.button {
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: bold; 
+  transition: background-color 0.3s ease; 
+}
+
+.button:hover {
+  background-color: #2563eb; 
+}
+
+.button:focus {
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5); 
+}
+
+.delete-button {
+  background-color: #ef4444;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: bold; 
+  transition: background-color 0.3s ease; 
+}
+
+.delete-button:hover {
+  background-color: #dc2626; 
+}
+
+.delete-button:focus {
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.5); 
+}
+
+.cancel-button {
+  background-color: #6b7280; 
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cancel-button:hover {
+  background-color: #4b5563; 
+}
+
+.cancel-button:active {
+  transform: scale(0.95);
+}
+
+.month-picker-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+.month-picker-container {
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+}
+.month-picker-container h3{
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Month Picker Styling */
+.month-picker {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 columns */
+  gap: 10px; /* Space between buttons */
+  margin-bottom: 20px; /* Space below the month picker */
+}
+
+.month-picker button {
+  padding: 10px;
+  background-color: #f3f4f6; /* Light gray background */
+  border: 1px solid #e5e7eb; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.month-picker button:hover {
+  background-color: #e5e7eb; /* Slightly darker gray on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.month-picker button.selected {
+  background-color: #3b82f6; /* Blue background for selected month */
+  color: white; /* White text for selected month */
+  border-color: #3b82f6; /* Blue border for selected month */
+}
+
+/* Year Selector Styling */
+.year-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Space between buttons and year */
+  margin-bottom: 20px; /* Space below the year selector */
+}
+
+.year-selector button {
+  padding: 5px 10px;
+  background-color: #f3f4f6; /* Light gray background */
+  border: 1px solid #e5e7eb; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.year-selector button:hover {
+  background-color: #e5e7eb; /* Slightly darker gray on hover */
+}
+
+.year-selector span {
+  font-size: 1.2rem; /* Larger font size for the year */
+  font-weight: bold; /* Bold text for the year */
+}
+
+/* Modal Actions Styling */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 10px; /* Space between buttons */
+}
+
+.modal-actions button {
+  padding: 8px 16px;
+  background-color: #f3f4f6; /* Light gray background */
+  border: 1px solid #e5e7eb; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.modal-actions button:hover {
+  background-color: #e5e7eb; /* Slightly darker gray on hover */
+}
+
+.modal-actions button:last-child {
+  background-color: #3b82f6; /* Blue background for Confirm button */
+  color: white; /* White text for Confirm button */
+  border-color: #3b82f6; /* Blue border for Confirm button */
+}
+
+.modal-actions button:last-child:hover {
+  background-color: #2563eb; /* Darker blue on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .calendar-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdd835;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  
+  .month-picker {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  
+  .calendar-day {
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #fff;
+  }
+  
+  
+  .over-budget {
+    background-color: #ffcccc;
+    color: #d32f2f;
+    font-weight: bold;
+  }
+  
+  
+  .within-budget {
+    background-color: #e0f2f1;
+    color: #388e3c;
+    font-weight: bold;
+  }
+  
+  
+  .month-picker-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button.confirm {
+    background: #fdd835;
+    color: #000;
+  }
+  
+  button.cancel {
+    background: #ccc;
+    color: #333;
+  }
+   */
